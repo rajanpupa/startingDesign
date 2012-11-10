@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Page</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="script.js" >
+			
+		</script>
+		<link type="text/css" rel="stylesheet" href="./styles/style1.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div id="image">
+					<img src="images/header.png" ></img>				
+				</div>
+				<div id="navigation">
+					<hr/>
+					<ul>
+						<li><a href="home.htm">Home</a></li>
+						<li><a href="login.htm">login</a></li>
+						<li><a href="signup.htm">signup</a></li>
+					</ul>
+					<hr/>
+				</div>
+			</div>
+			<div id="main_area">
+				<h1><u>Explore the idea with new technique.</u></h1>
+				<div id="articles">
+					<div class="article">
+						<div class="article_header">The Shopping Cart category</div>
+						<div class="article_text">This table store the product categories. From the ER diagram you can see that our current database design enables a category to have a child category and for the child category to have another child category and so on. But for this tutorial we make a restriction that the category will only two level deep like this "Top Category > Manga > Naruto". The reason is to reduce the number of clicks required by a visitor when browsing a category. Another rule is that a product can only be added on the second level category. For example if we have this category structure : Top Category > Manga > Naruto then we can only add a product in "Naruto", not in "Manga". The top level categories will not contain any products and a product can only belong to one category. 			</div>				
+					</div>				
+					<div class="article">
+						<div class="article_header">About the product</div>
+						<div class="article_text"> this table we store the product's name, category id, description, image and thumbnail. For now a product can only have one image. It may not be enough if you want to show a picture of you product from multiple angles so i plan to improve this on future version.			</div>				
+					</div>				
+					<div class="article">
+						<div class="article_header">The cart of the Internet</div>
+						<div class="article_text">TThis table will store all items currently put by the customer. Here we have ct_session_id to save the id of a shopping session. We will explore this further when adding a product to shopping cart
+ 						</div>				
+					</div>				
+				</div>
+			</div>
+
+			<div id="footer">
+				<hr/>
+				Copyright &copy; 2012 reserved to Rajan Prasad Upadhyay.
+				<hr/>
+			</div>
+		</div>
+
+	</body>
+</html>

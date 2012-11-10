@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sign Up Page</title>
+		<link type="text/css" rel="stylesheet" href="styles/style1.css" />
+		
+		<script type="text/javascript" src="./scripts/script1.js">
+			function valid(){
+				var emailVal = document.getElementById('email').value;
+				var userName = document.getElementById('usser').value;
+				var password = document.getElementById('pass').value;
+				var cpass = document.getElementById('email').value;
+				if(email === '' || userName === '' || password === '' || cpass===''){
+					alert('empty fields can not be submitted');
+				}
+				return false;
+			}
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div id="image">
+					<img src="images/header.png" ></img>				
+				</div>
+				<div id="navigation">
+					<hr/>
+					<ul>
+						<li><a href="home.htm">Home</a></li>
+						<li><a href="login.htm">login</a></li>
+						<li><a href="signup.htm">signup</a></li>
+					</ul>
+					<hr/>
+				</div>
+			</div>
+			<div id="main_area">
+				<h1><u>Explore the idea with new technique.</u></h1>
+				<form method="post" action="" onsubmit ="return valid()">
+					<span class="form_header">Sign Up form</span><br/>
+					<label> Email:</label><br/>
+					<input type="text" id="email" /><br/>
+					<label>UserName:</label><br/>
+					<input type="text" id="user" /><br/>
+					<label>Password</label><br/>
+					<input type="text" id="pass" /><br/>
+					<label>Conform password</label><br/>
+					<input type="text" id="cpass" /><br/>
+					<input type="submit" value="Submit" id="submit" />
+				</form>
+			</div>
+			<div id="footer">
+				<hr/>
+				Copyright &copy; 2012 reserved to Rajan Prasad Upadhyay.
+				<hr/>
+			</div>
+		</div>
+	</body>
+</html>
