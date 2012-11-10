@@ -3,25 +3,15 @@
 	<head>
 		<title>Sign Up Page</title>
 		<link type="text/css" rel="stylesheet" href="styles/style1.css" />
-		
-		<script type="text/javascript" src="./scripts/script1.js">
-			function valid(){
-				var emailVal = document.getElementById('email').value;
-				var userName = document.getElementById('usser').value;
-				var password = document.getElementById('pass').value;
-				var cpass = document.getElementById('email').value;
-				if(email === '' || userName === '' || password === '' || cpass===''){
-					alert('empty fields can not be submitted');
-				}
-				return false;
-			}
+		<script type="text/javascript" src="./scripts/signup1.js">
 		</script>
+		<!-- my name is Rajan prasad upadhyay. -->
 	</head>
 	<body>
 		<div id="wrapper">
 			<div id="header">
 				<div id="image">
-					<img src="images/header.png" ></img>				
+					<img src="images/header.png" ></img>			
 				</div>
 				<div id="navigation">
 					<hr/>
@@ -35,16 +25,16 @@
 			</div>
 			<div id="main_area">
 				<h1><u>Explore the idea with new technique.</u></h1>
-				<form method="post" action="" onsubmit ="return valid()">
+				<form method="post" action="" onsubmit ="return validate()">
 					<span class="form_header">Sign Up form</span><br/>
 					<label> Email:</label><br/>
 					<input type="text" id="email" /><br/>
 					<label>UserName:</label><br/>
-					<input type="text" id="user" /><br/>
+					<input type="text" id="username" /><br/>
 					<label>Password</label><br/>
-					<input type="text" id="pass" /><br/>
+					<input type="text" id="password" /><br/>
 					<label>Conform password</label><br/>
-					<input type="text" id="cpass" /><br/>
+					<input type="text" id="c_password" /><br/>
 					<input type="submit" value="Submit" id="submit" />
 				</form>
 			</div>
