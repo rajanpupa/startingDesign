@@ -28,13 +28,17 @@
 				<form method="post" action="" onsubmit ="return validate()">
 					<span class="form_header">Sign Up form</span><br/>
 					<label> Email:</label><br/>
-					<input type="text" id="email" /><br/>
+					<input type="text" id="email" onblur="check_email()"/><br/>
+					<div id="email_error_area" class="error"></div>
 					<label>UserName:</label><br/>
-					<input type="text" id="username" /><br/>
+					<input type="text" id="username" onblur="check_username()" /><br/>
+					<div id="username_error_area" class="error"></div>
 					<label>Password</label><br/>
-					<input type="text" id="password" /><br/>
+					<input type="password" id="password" onblur="check_password()" /><br/>
+					<div id="password_error_area" class="error"></div>
 					<label>Conform password</label><br/>
-					<input type="text" id="c_password" /><br/>
+					<input type="password" id="c_password" onblur="check_c_password()" /><br/>
+					<div id="c_password_error_area" class="error"></div>
 					<input type="submit" value="Submit" id="submit" />
 				</form>
 			</div>

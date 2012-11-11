@@ -75,6 +75,11 @@ body{
 	font-size: 0.8em;
 	color: #224411;
 }
+.error{
+	color: red;
+	font-family: Times;
+	font-size: .8em;
+}
 #footer{
 	margin-bottom: 0;
 	padding: 0;
